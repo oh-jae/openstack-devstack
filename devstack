@@ -10,6 +10,29 @@ RUN sudo apt update
     sudo su - stack #
     sudo apt install git -y
     git clone https://opendev.org/openstack/devstack 
+    cd devstack
+    cp ./samples/local.conf local.conf
+    sudo vim local.conf
+"""
+패스워드 변경
+ADMIN_PASSWORD=
+DATABASE_PASSWORD=
+RABBIT_PASSWORD=
+SERVICE_PASSWORD=
+"""
+
+"""
+IP 입력
+HOST_IP=
+"""
+
+
+
+
+
+
+
+
 # 내용 변경 시 RUN   sed -i "s|some-original-string|the-new-string |g" /etc/sysctl.conf
 # 내용 추가 시 RUN   echo "Some line to add to a file" >> /etc/sysctl.conf
     
