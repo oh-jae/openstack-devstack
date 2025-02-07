@@ -1,1 +1,17 @@
-RUN 
+RUN sudo apt update
+    sudo apt upgrade -y
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    sudo apt update
+    sudo apt upgrade -y
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
+    sudo su - stack #
+    sudo apt install git -y
+    git clone https://opendev.org/openstack/devstack 
+# 내용 변경 시 RUN   sed -i "s|some-original-string|the-new-string |g" /etc/sysctl.conf
+# 내용 추가 시 RUN   echo "Some line to add to a file" >> /etc/sysctl.conf
+    
+
+
