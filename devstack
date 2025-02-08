@@ -25,6 +25,7 @@ SERVICE_PASSWORD=
 IP 입력
 HOST_IP=
 """
+# $ ./stack.sh
 # 웹 브라우저에 IP/dashboard 를 주소로 입력
 
 
