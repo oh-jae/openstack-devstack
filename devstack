@@ -7,7 +7,6 @@ RUN sudo apt update
     sudo apt-get update
     sudo apt-get upgrade -y
     echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
-    sudo su - stack #
     sudo apt install git -y
     git clone https://opendev.org/openstack/devstack 
     cd devstack
